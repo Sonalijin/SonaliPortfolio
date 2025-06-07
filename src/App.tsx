@@ -8,7 +8,7 @@ import Experience from './pages/Experience';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/KshitinjayPortfolio">
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
@@ -20,10 +20,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        {/* <Footer /> */}
       </div>
     </Router>
   );
 }
 
-export default App; 
+export default App;
