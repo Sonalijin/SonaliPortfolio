@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import BloodFinder from '../assets/Images/OnlineBloodFinder_Thumbnail.png';
 import TicTacToe from '../assets/Images/TicTacToe_Thumbnail.png';
