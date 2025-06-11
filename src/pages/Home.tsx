@@ -61,30 +61,24 @@ const Home = () => {
 
   return (
     <div className="min-h-screen pt-16">
-      <div className="container mx-auto px-4 py-20">
-        <motion.div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-8 py-12">
+        <motion.div className="max-w-6xl">
           <motion.div
             variants={titleVariants}
             initial="hidden"
             animate="visible"
-            className="text-center mb-8"
+            className="mb-8"
           >
             <motion.h1
-              className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent"
-              animate={{
-                backgroundSize: ["100% 100%", "200% 100%"],
-                backgroundPosition: ["0% 0%", "100% 0%"]
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                repeatType: "reverse"
-              }}
+              className="text-4xl md:text-6xl font-bold mb-6"
             >
-              Hi, I'm Sonali
+              Hi, I'm{" "}
+              <span className="bg-gradient-to-r from-gradientStart via-gradientMiddle to-gradientEnd bg-clip-text text-transparent">
+                Sonali
+              </span>
             </motion.h1>
             <motion.h2
-              className="text-3xl md:text-4xl text-textSecondary mb-8 font-display"
+              className="text-2xl md:text-3xl mb-8 text-secondary font-display"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
@@ -94,7 +88,7 @@ const Home = () => {
           </motion.div>
           
           <motion.p
-            className="text-xl text-textSecondary mb-12 leading-relaxed text-center"
+            className="text-lg md:text-xl text-textSecondary mb-12 leading-relaxed max-w-4xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -104,11 +98,11 @@ const Home = () => {
             designing interactive user interfaces, and developing reusable components.
           </motion.p>
 
-          <motion.div className="flex flex-wrap justify-center gap-6 mb-16">
+          <motion.div className="flex flex-wrap gap-6 mb-16">
             <motion.div variants={buttonVariants} initial="hidden" animate="visible" whileHover="hover">
               <Link
                 to="/projects"
-                className="px-8 py-4 bg-secondary text-primary rounded-full font-bold text-lg transition-colors duration-300"
+                className="px-8 py-3 bg-gradient-to-r from-gradientStart to-gradientEnd text-primary rounded-full font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-gradientEnd/20"
               >
                 View My Work
               </Link>
@@ -116,7 +110,7 @@ const Home = () => {
             <motion.div variants={buttonVariants} initial="hidden" animate="visible" whileHover="hover">
               <Link
                 to="/contact"
-                className="px-8 py-4 border-2 border-secondary text-secondary rounded-full font-bold text-lg transition-colors duration-300"
+                className="px-8 py-3 border-2 border-gradientEnd text-gradientEnd rounded-full font-bold text-base transition-all duration-300 hover:bg-gradientEnd/10"
               >
                 Contact Me
               </Link>
@@ -127,10 +121,10 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="bg-tertiary rounded-2xl p-8 shadow-lg border border-secondary/10"
+            className="rounded-2xl"
           >
             <motion.h3
-              className="text-3xl font-bold mb-8 text-center text-secondary"
+              className="text-3xl font-bold mb-10 bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.5 }}
@@ -144,8 +138,9 @@ const Home = () => {
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
+                  className="relative"
                 >
-                  <h4 className="text-xl font-semibold mb-6 text-accent">{skillGroup.category}</h4>
+                  <h4 className="text-2xl font-semibold mb-6 text-gradientMiddle">{skillGroup.category}</h4>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {skillGroup.items.map((skill, i) => (
                       <motion.div
@@ -155,9 +150,14 @@ const Home = () => {
                         animate="visible"
                         whileHover="hover"
                         transition={{ delay: (1.2 + index * 0.1) + (i * 0.05) }}
-                        className="bg-primary/30 p-4 rounded-lg text-center backdrop-blur-sm"
+                        className="relative group rounded-lg overflow-hidden"
                       >
-                        <span className="text-textPrimary">{skill}</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-gradientStart/5 to-gradientEnd/5 rounded-lg transform transition-transform group-hover:scale-105" />
+                        <div className="relative p-4 rounded-lg">
+                          <span className="text-textPrimary text-base font-medium group-hover:text-gradientEnd transition-colors">
+                            {skill}
+                          </span>
+                        </div>
                       </motion.div>
                     ))}
                   </div>

@@ -1,32 +1,49 @@
 export const skills = [
   {
-    category: 'Libraries',
-    items: ['ReactJS', 'Redux', 'TypeScript', 'Socket.io', 'Webpack', 'Node', 'MaterialUI', 'Tailwind'],
-  },
-  {
-    category: 'Styling',
-    items: ['HTML', 'CSS', 'SCSS', 'Bootstrap'],
-  },
-  {
-    category: 'Frameworks',
-    items: ['TypeScript', 'JavaScript'],
-  },
-  {
-    category: 'Testing & Version Control',
-    items: ['Jest', 'Vitest', 'Git'],
-  },
-  {
-    category: 'APIs & Integration',
-    items: ['WebSocket', 'RESTful APIs', 'Twilio', 'Firebase'],
-  },
-  {
-    category: 'Development Practices',
+    category: 'Frontend Development',
     items: [
-      'Responsive Design',
-      'Performance Optimization',
-      'Agile (Scrum)',
-      'Code Reviews',
-      'API Integration'
-    ],
+      'React.js',
+      'Redux Toolkit',
+      'TypeScript',
+      'JavaScript',
+      'Context API',
+      'WebSocket',
+      'Socket.io'
+    ]
   },
+  {
+    category: 'UI Technologies',
+    items: [
+      'Material UI',
+      'Tailwind CSS',
+      'Bootstrap',
+      'SCSS/SASS',
+      'HTML5',
+      'CSS3',
+      'Responsive Design'
+    ]
+  },
+  {
+    category: 'Tools & Testing',
+    items: [
+      'Jest',
+      'React Testing Library',
+      'Git',
+      'Webpack',
+      'npm/yarn',
+      'Postman',
+      'VS Code'
+    ]
+  },
+  {
+    category: 'Professional Skills',
+    items: [
+      'Agile/Scrum',
+      'Code Reviews',
+      'API Integration',
+      'Performance Optimization',
+      'Technical Documentation',
+      'Team Leadership'
+    ]
+  }
 ]; 
