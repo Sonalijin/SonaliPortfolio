@@ -41,7 +41,7 @@ export const projects = [
     description: 'Developed a web game with swipe-based quiz features similar to Tinder using React, enhancing user engagement through intuitive gameplay mechanics.',
     technologies: ['React', 'Firebase', 'Styled-Components', 'Node', 'MongoDB', 'Express'],
     company: 'NIIT Ltd',
-    period: 'April 2019 - March 2021',
+    period: 'August 2019 - November 2020',
     highlights: [
       'Built interactive game mechanics',
       'Implemented user engagement features',
@@ -53,7 +53,7 @@ export const projects = [
     description: 'Developed a web game for preschoolers with comprehensive admin panel for managing game assets and functionalities.',
     technologies: ['React', 'Redux', 'Socket.io', 'TypeScript'],
     company: 'NIIT Ltd',
-    period: '2019',
+    period: 'August 2019 - November 2020',
     highlights: [
       'Built admin panel for game management',
       'Implemented asset management system',
