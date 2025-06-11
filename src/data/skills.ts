@@ -26,6 +26,7 @@ export const skills = [
       'Performance Optimization',
       'Agile (Scrum)',
       'Code Reviews',
+      'API Integration'
     ],
   },
 ]; 
