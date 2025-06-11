@@ -14,7 +14,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <p className="text-textSecondary mb-6">
-                I'm a passionate Software Developer with over 4 years of experience building dynamic, user-centric web applications. My expertise lies in modern front-end technologies including ReactJS, Redux Toolkit, TypeScript, and Tailwind CSS, with a strong focus on creating responsive and accessible interfaces.
+                I'm a passionate Software Developer with over 5 years of experience building dynamic, user-centric web applications. My expertise lies in modern front-end technologies including ReactJS, Redux Toolkit, TypeScript, and Tailwind CSS, with a strong focus on creating responsive and accessible interfaces.
               </p>
               <p className="text-textSecondary mb-6">
                 Throughout my career, I've contributed to high-impact products such as TryEva, EvaStudio, and AkiroLabs, where I led performance optimization efforts, introduced scalable UI architectures, and integrated AI-driven features like ChatGPT. My work has directly improved product engagement, reduced development time, and enhanced user satisfaction.

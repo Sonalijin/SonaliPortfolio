@@ -1,7 +1,7 @@
 export const skills = [
   {
     category: 'Languages',
-    items: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript'],
+    items: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript','Socket.io','Webrtc'],
   },
   {
     category: 'Frameworks & Libraries',
@@ -10,14 +10,12 @@ export const skills = [
       'Redux Toolkit',
       'Context API',
       'Styled-Components',
-      'R-suite',
-      'Ant Design',
       'Lodash',
-      'Fusion Chart',
       'ChartJS',
       'Bootstrap',
       'Tailwind CSS',
-      'Material UI'
+      'Material UI',
+      'Twilio'
     ],
   },
   {

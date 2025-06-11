@@ -158,13 +158,13 @@ const Contact = () => {
             <h2 className="text-xl font-bold mb-4">Other Ways to Connect</h2>
             <div className="flex justify-center space-x-6">
               <a
-                href="mailto:kshitinjay20@gmail.com"
+                href="mailto:Sonalijain057@gmail.com"
                 className="text-textSecondary hover:text-secondary transition-colors"
               >
                 Email
               </a>
               <a
-                href="https://www.linkedin.com/in/kshitinjaykumar/"
+                href="https://www.linkedin.com/in/sonali-jain-33a6a713a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-textSecondary hover:text-secondary transition-colors"
@@ -172,7 +172,7 @@ const Contact = () => {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/Kshitinjay"
+                href="https://github.com/Sonalijin/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-textSecondary hover:text-secondary transition-colors"

@@ -13,13 +13,13 @@ const Home = () => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-secondary">Kshitinjay</span>
+            Hi, I'm <span className="text-secondary">Sonali</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-textSecondary mb-8">
             Senior Frontend Developer
           </h2>
           <p className="text-lg text-textSecondary mb-8">
-            Software Developer with 4+ years of experience building scalable, user-focused web applications. Skilled in
+            Software Developer with 5+ years of experience building scalable, user-focused web applications. Skilled in
             ReactJS, Redux Toolkit, JavaScript, TypeScript, Tailwind CSS, MUI, Bootstrap, SCSS, HTML/CSS, and testing
             with Jest and React Testing Library. Strong in creating responsive and accessible user interfaces and in
             collaborating in Agile teams.

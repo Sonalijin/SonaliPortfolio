@@ -6,7 +6,7 @@ const Experience = () => {
       company: 'BlackNGreen',
       role: 'Sr. Software Engineer',
       location: 'Gurgaon, Haryana',
-      period: 'June 2024 – Present',
+      period: 'Oct 2022 – Present',
       achievements: [
         'Built and maintained the complete front-end for TryEva and EvaStudio (flagship products of BlackNGreen), using ReactJS and Styled-Components to deliver a modular, scalable UI, improving page load times by 30%.',
         'Engineered a JSON-driven form generation system, reducing development time for new form features by 45%.',
@@ -17,10 +17,10 @@ const Experience = () => {
       ]
     },
     {
-      company: 'SirionLabs',
+      company: 'TCS',
       role: 'Software Engineer',
-      location: 'Gurgaon, Haryana',
-      period: 'May 2021 – June 2024',
+      location: 'Noida, Uttar Pradesh',
+      period: 'May 2022 – sept 2022',
       achievements: [
         'Designed new user-facing features in ReactJS for Akirolabs (German based product).',
         'Incorporated ChatGPT into AkiroLabs, boosting user engagement by 40% and session duration by 25%.',
@@ -34,9 +34,9 @@ const Experience = () => {
       ]
     },
     {
-      company: 'Newton School',
-      role: 'Intern',
-      location: 'Bangalore, Karnataka',
+      company: 'Chicmic',
+      role: 'Software Engineer',
+      location: 'Mohali, Punjab',
       period: 'Oct 2020 – May 2021',
       achievements: [
         'Completed coding bootcamp and collaborated on real-world web development projects.'

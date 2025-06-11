@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1sk9HbQIGO5ebwYTP1EZeL16c3uoLJq73/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1f6tQH5AE3LD0EUcXDH8sSM-EXfQP96DX/view', '_blank');
   };
 
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-2xl font-bold text-secondary">
-            Kshitinjay Kumar
+            Sonali Jain
           </Link>
 
           {/* Desktop Navigation */}

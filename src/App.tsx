@@ -8,7 +8,7 @@ import Experience from './pages/Experience';
 
 function App() {
   return (
-    <Router basename="/KshitinjayPortfolio">
+    <Router basename="/SonaliPortfolio">
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

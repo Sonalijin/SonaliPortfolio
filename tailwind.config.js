@@ -6,14 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
+      },
       colors: {
-        primary: '#1a1a1a',
-        secondary: '#64ffda',
-        tertiary: '#2a2a2a',
-        textPrimary: '#ffffff',
-        textSecondary: '#8892b0',
-        error: '#ff4d4d',
-        success: '#4caf50',
+        primary: '#0f172a',
+        secondary: '#6366f1',
+        tertiary: '#1e293b',
+        accent: '#f472b6',
+        textPrimary: '#f8fafc',
+        textSecondary: '#94a3b8',
+        background: '#0f172a',
+        card: '#1e293b',
+        error: '#ef4444',
+        success: '#22c55e',
       },
       spacing: {
         xs: '0.25rem',
@@ -24,8 +31,8 @@ export default {
       },
       borderRadius: {
         sm: '0.25rem',
-        md: '0.2rem',
-        lg: '0.5rem',
+        md: '0.5rem',
+        lg: '1rem',
         full: '9999px',
       },
       transitionProperty: {
