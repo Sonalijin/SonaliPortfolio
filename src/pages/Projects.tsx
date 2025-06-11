@@ -1,49 +1,7 @@
 import { motion } from 'framer-motion';
-import BloodFinder from '../assets/Images/OnlineBloodFinder_Thumbnail.png';
-import TicTacToe from '../assets/Images/TicTacToe_Thumbnail.png';
-import CardMemoryGame from '../assets/Images/CardMemoryGame_Thumbnail.png';
-import MeetingRoomBooking from '../assets/Images/MeetingRoomApp_Thumbnail.png';
-import Bomberman from '../assets/Images/BombermanApp_Thumbnail.png';
+import { projects } from '../data/projects';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Blood Finder Web App',
-      description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Stripe integration.',
-      technologies: ['ReactJs', 'Javascript', 'Bootstrap'],
-      image: BloodFinder,
-      link: 'https://online-blood-finder-major-project.vercel.app/',
-    },
-    {
-      title: 'Tic-Tac-Toe Game',
-      description: 'A collaborative task management application with real-time updates and team features.',
-      technologies: ['ReactJs'],
-      image: TicTacToe,
-      link: 'https://newton-school-tic-tac-toe.vercel.app/',
-    },
-    {
-      title: 'Card Memory Game',
-      description: 'A modern portfolio website showcasing projects and skills with smooth animations.',
-      technologies: ['React', 'Javascript', 'Bootstrap'],
-      image: CardMemoryGame,
-      link: 'https://company-assignment-3-card-memory-game.vercel.app/',
-    },
-    {
-      title: 'Meeting Room Booking App - Optimizing Reservation Workflow',
-      description: 'A modern portfolio website showcasing projects and skills with smooth animations.',
-      technologies: ['React', 'Javascript', 'Bootstrap'],
-      image: MeetingRoomBooking,
-      link: 'https://company-assignment-meeting-room-booking.vercel.app/',
-    },
-    {
-      title: 'Bomberman',
-      description: 'A modern portfolio website showcasing projects and skills with smooth animations.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: Bomberman,
-      link: 'https://kshitinjay.github.io/BomberMan.github.io/',
-    },
-  ];
-
   return (
     <div className="min-h-screen pt-16">
       <div className="container mx-auto px-4 py-20">
@@ -52,42 +10,40 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="section-title">My Projects</h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h1 className="text-4xl font-bold mb-12">Projects & Experience</h1>
+          <div className="grid grid-cols-1 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-tertiary rounded-lg overflow-hidden"
+                className="bg-tertiary p-6 rounded-lg shadow-lg"
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-textSecondary mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="bg-primary px-2 py-1 rounded text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                <div className="flex flex-col md:flex-row justify-between mb-4">
+                  <h2 className="text-2xl font-bold text-secondary">{project.title}</h2>
+                  <div className="text-textSecondary">
+                    <span className="font-semibold">{project.company}</span> | {project.period}
                   </div>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-secondary hover:underline"
-                  >
-                    View Project →
-                  </a>
+                </div>
+                <p className="text-textSecondary mb-4">{project.description}</p>
+                <div className="mb-4">
+                  <h3 className="text-lg font-semibold mb-2">Key Achievements:</h3>
+                  <ul className="list-disc list-inside text-textSecondary">
+                    {project.highlights.map((highlight, i) => (
+                      <li key={i} className="mb-1">{highlight}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-background rounded-full text-sm text-secondary border border-secondary"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </motion.div>
             ))}

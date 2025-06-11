@@ -1,39 +1,31 @@
 export const skills = [
   {
-    category: 'Languages',
-    items: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript','Socket.io','Webrtc'],
+    category: 'Libraries',
+    items: ['ReactJS', 'Redux', 'TypeScript', 'Socket.io', 'Webpack', 'Node', 'MaterialUI', 'Tailwind'],
   },
   {
-    category: 'Frameworks & Libraries',
-    items: [
-      'ReactJS',
-      'Redux Toolkit',
-      'Context API',
-      'Styled-Components',
-      'Lodash',
-      'ChartJS',
-      'Bootstrap',
-      'Tailwind CSS',
-      'Material UI',
-      'Twilio'
-    ],
+    category: 'Styling',
+    items: ['HTML', 'CSS', 'SCSS', 'Bootstrap'],
   },
   {
-    category: 'Testing',
-    items: [
-      'Jest',
-      'React Testing Library (RTL)',
-      'Unit Testing',
-      'Integration Testing'
-    ],
+    category: 'Frameworks',
+    items: ['TypeScript', 'JavaScript'],
   },
   {
-    category: 'Practices',
+    category: 'Testing & Version Control',
+    items: ['Jest', 'Vitest', 'Git'],
+  },
+  {
+    category: 'APIs & Integration',
+    items: ['WebSocket', 'RESTful APIs', 'Twilio', 'Firebase'],
+  },
+  {
+    category: 'Development Practices',
     items: [
       'Responsive Design',
       'Performance Optimization',
       'Agile (Scrum)',
-      'Code Reviews'
+      'Code Reviews',
     ],
   },
 ]; 
