@@ -43,7 +43,7 @@ const Projects = () => {
             Explore my work as products—each card showcases a real-world solution, the tech stack, and a direct link to try or view more.
           </motion.p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <motion.div
                 key={project.title}
                 variants={projectVariants}
