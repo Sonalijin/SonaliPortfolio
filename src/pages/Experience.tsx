@@ -20,7 +20,7 @@ const Experience = () => {
       company: 'TCS',
       role: 'Software Engineer',
       location: 'Noida, Uttar Pradesh',
-      period: 'May 2022 – sept 2022',
+      period: 'May 2022 – Sept 2022',
       achievements: [
         'Designed new user-facing features in ReactJS for Akirolabs (German based product).',
         'Incorporated ChatGPT into AkiroLabs, boosting user engagement by 40% and session duration by 25%.',
@@ -40,6 +40,22 @@ const Experience = () => {
       period: 'Oct 2020 – May 2021',
       achievements: [
         'Completed coding bootcamp and collaborated on real-world web development projects.'
+      ]
+    },
+    {
+      company: 'NIIT Ltd',
+      role: 'Software Developer',
+      location: 'Noida, Uttar Pradesh',
+      period: 'August 2019 – November 2020',
+      achievements: [
+        'Developed and maintained multiple educational web applications using React.js, including Swipe4win Game and Helen Doron Learning Platform.',
+        'Implemented interactive game mechanics and real-time features using Socket.io, enhancing user engagement and learning outcomes.',
+        'Built comprehensive admin panels for managing game assets, user progress, and content delivery, improving administrative efficiency by 40%.',
+        'Created responsive and accessible UI components using modern CSS frameworks, ensuring consistent user experience across devices.',
+        'Integrated Firebase for real-time data synchronization and user authentication, reducing server load by 30%.',
+        'Collaborated with cross-functional teams to implement gamification features, resulting in 45% increase in user engagement.',
+        'Optimized application performance through code splitting and lazy loading, improving initial load time by 35%.',
+        'Implemented automated testing using Jest and React Testing Library, achieving 80% test coverage.'
       ]
     }
   ];

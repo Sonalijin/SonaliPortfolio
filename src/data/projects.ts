@@ -1,3 +1,9 @@
+import EvaImg from '../assets/images/Eva.png';
+import HelenDoronImg from '../assets/images/helen-doron.png';
+import CuzseAppImg from '../assets/images/cuzse-app.png';
+import PmjayImg from '../assets/images/pmjay.png';
+import Swipe4winImg from '../assets/images/swipe4win.png';
+
 export const projects = [
   {
     title: 'EVA App',
@@ -10,7 +16,9 @@ export const projects = [
       'Integrated WebSocket for real-time communication',
       'Built robust user role and permission management system',
       'Developed digital signature functionality for secure transactions'
-    ]
+    ],
+    link: 'https://evainternal.bngrenew.com/eva',
+    image: EvaImg
   },
   {
     title: 'PMJAY User Management Portal',
@@ -22,7 +30,9 @@ export const projects = [
       'Project Lead for PMJAY Portal Development',
       'Optimized and Scaled Portal for improved User Access',
       'Enhanced Healthcare Service Delivery'
-    ]
+    ],
+    link: 'https://ump.pmjay.gov.in/signup',
+    image: PmjayImg
   },
   {
     title: 'Cuzse App',
@@ -34,7 +44,9 @@ export const projects = [
       'Implemented video calling capabilities using Twilio',
       'Built real-time chat functionality with Socket.io',
       'Managed complex state with Redux and Saga'
-    ]
+    ],
+    link: 'https://ddzyg3vutpr4b.cloudfront.net/login',
+    image: CuzseAppImg
   },
   {
     title: 'Swipe4win Game',
@@ -46,7 +58,9 @@ export const projects = [
       'Built interactive game mechanics',
       'Implemented user engagement features',
       'Developed responsive design'
-    ]
+    ],
+    link: 'https://swipe4win.bngrenew.com/#/launch',
+    image: Swipe4winImg
   },
   {
     title: 'Helen Doron',
@@ -58,6 +72,9 @@ export const projects = [
       'Built admin panel for game management',
       'Implemented asset management system',
       'Created user management system'
-    ]
+    ],
+    link: 'https://cocosteam.s3.us-east-2.amazonaws.com/Helen-Doron-Dev/index.html?platform_auth_token=07e3342d1cb85c69994c8f4d617009a7&platform_room_id=289823',
+    image: HelenDoronImg
   }
-]; 
+];
+
